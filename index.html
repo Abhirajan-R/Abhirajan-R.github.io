@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ECE technologist portfolio featuring embedded systems, IoT, robotics and AI projects.">
+  <title>AR | Electronics • AI • IoT • Robotics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"}}</script>
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="AR home">
+      <span class="ar-logo">AR</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#publication">Research</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon">☾</span>
+      <span class="toggle-label">Light</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ELECTRONICS • AI • ROBOTICS</div>
+        <div class="hero-name">ABHIRAJAN R</div>
+        <h1>Building intelligent<br><em>systems</em> for the real world.</h1>
+        <p class="hero-text">
+          B.Tech ECE student and technologist exploring IoT, robotics,
+          AI-driven automation and practical electronics.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore projects <span>↗</span></a>
+          <a class="btn ghost" href="#about">View profile</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>ECE</strong><span>Undergraduate</span></div>
+          <div><strong>AI + IoT</strong><span>Project focus</span></div>
+          <div><strong>Robotics</strong><span>Applied systems</span></div>
+        </div>
+      </div>
+
+      <div class="robot-stage" id="robotStage">
+        <div class="stage-label"><span>03</span> SENTINEL-X / 3D MODEL</div>
+        <div class="halo"></div>
+        <canvas id="robotCanvas" aria-label="Interactive 3D Sentinel-X robot model"></canvas>
+        <div class="model-status"><span></span> DRAG · ROTATE &nbsp; | &nbsp; WHEEL · ZOOM</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-kicker">01 / PROFILE</div>
+      <div class="about-grid">
+        <div>
+          <h2>Technology with a<br><em>practical purpose.</em></h2>
+        </div>
+        <div>
+          <p class="large">
+            An open and honest technologist interested in building useful systems
+            across electronics, communication, AI, IoT and robotics.
+          </p>
+          <p>
+            The portfolio combines academic learning with hands-on projects,
+            workshops and practical experimentation. Current interests include
+            intelligent devices, circuit design, automation and connected systems.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-info" id="resume-info">
+      <div class="section-kicker">01 / PERSONAL PROFILE</div>
+      <div class="info-grid">
+        <div>
+          <h2>Abhirajan R<br><em>Technologist.</em></h2>
+        </div>
+        <div class="info-copy">
+          <p class="large">B.Tech Electronics & Communication Engineering student at SASTRA SRC Campus, Kumbakonam.</p>
+          <p>Interested in electronics, AI, IoT, robotics, circuit designing, communication and practical technology projects.</p>
+          <div class="info-chips">
+            <span>Electronics & Communication</span>
+            <span>AI</span>
+            <span>IoT</span>
+            <span>Robotics</span>
+            <span>Circuit Designing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">02 / PROJECT ARCHIVE</div>
+          <h2>From signal<br>to <em>system.</em></h2>
+        </div>
+        <span class="count">08</span>
+      </div>
+
+      <div class="project-grid expanded-projects">
+
+        <article class="project-card featured">
+          <div class="project-visual rescue">
+            <div class="visual-grid"></div>
+            <div class="mini-bot">
+              <span class="mini-eye"></span>
+              <span class="mini-wheel l"></span><span class="mini-wheel r"></span>
+            </div>
+            <span class="visual-code">SX-01</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>IoT & Robotics</span><span>2024–2025</span></div>
+            <h3>Sentinel-X</h3>
+            <p>IoT-based autonomous search-and-rescue robot for disaster zones, integrating sensors, real-time image processing and AI-driven decision-making for survivor detection and rescue operations.</p>
+            <div class="tags"><span>IoT</span><span>Robotics</span><span>AI</span><span>Vision</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual drainage">
+            <div class="pipe pipe-a"></div><div class="pipe pipe-b"></div>
+            <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+            <span class="visual-code">AI / IoT</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>AI & IoT • Group</span><span>2024–2025</span></div>
+            <h3>Smart Drainage System</h3>
+            <p>AI-powered drainage monitoring concept using Raspberry Pi, IoT sensors and LoRaWAN/5G concepts to detect blockages, monitor pollution and send real-time alerts.</p>
+            <div class="tags"><span>Raspberry Pi</span><span>Sensors</span><span>LoRaWAN</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual signal">
+            <div class="wave wave-a"></div><div class="wave wave-b"></div><div class="signal-node"></div>
+            <span class="visual-code">ECG / ML</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Signal Processing & ML</span><span>Mini Project</span></div>
+            <h3>ECG Signal Analysis & Classification</h3>
+            <p>ECG classification system using time-domain, frequency-domain and statistical features from the PTB Diagnostic ECG Database. Random Forest and AdaBoost act as base learners with a stacking logistic-regression meta-classifier.</p>
+            <div class="result-strip"><strong>90.34%</strong><span>accuracy</span><strong>0.957</strong><span>AUC</span></div>
+            <div class="tags"><span>MATLAB</span><span>Random Forest</span><span>AdaBoost</span><span>Stacking</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual quantum">
+            <div class="quantum-core"></div>
+            <div class="quantum-line q1"></div><div class="quantum-line q2"></div><div class="quantum-line q3"></div>
+            <span class="visual-code">TRNG</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Hardware / Security</span><span>Mini Project</span></div>
+            <h3>Quantum-Inspired Hardware TRNG</h3>
+            <p>Hardware true random number generator using Zener diode avalanche noise, analog amplification and digital sampling, with random output demonstrated through a seven-segment display.</p>
+            <div class="tags"><span>Zener Noise</span><span>Analog</span><span>Digital Logic</span><span>TRNG</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual lora">
+            <div class="lora-center">AES</div>
+            <div class="lora-ring r1"></div><div class="lora-ring r2"></div><div class="lora-ring r3"></div>
+            <span class="visual-code">LORA / SECURE</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>MATLAB • Signal Processing</span><span>2024–2025</span></div>
+            <h3>Secure LoRa Communication Simulation</h3>
+            <p>Simulated a secure LoRa communication system using AES-128 encryption, channel-noise modelling and forward error correction.</p>
+            <div class="result-strip"><strong>93.5%</strong><span>data integrity</span><strong>3.02 Mbps</strong><span>at 10 dB SNR</span></div>
+            <div class="tags"><span>MATLAB</span><span>AES-128</span><span>FEC</span><span>SNR</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual fpga">
+            <div class="fpga-chip"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="visual-code">FPGA</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Digital Design / VLSI</span><span>Internship Project</span></div>
+            <h3>FPGA Implementation of PRESENT Algorithm</h3>
+            <p>Implemented the PRESENT algorithm in Verilog with improved security and parallel load architecture, using Quartus Prime and ModelSim for FPGA design and simulation.</p>
+            <div class="tags"><span>Verilog</span><span>Quartus Prime</span><span>ModelSim</span><span>Cryptography</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual face">
+            <div class="face-frame"><span class="eye e1"></span><span class="eye e2"></span><span class="nose"></span><span class="mouth"></span></div>
+            <span class="visual-code">FACE ID</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Image Processing / AI</span><span>ECE Poster Project</span></div>
+            <h3>Person Identification Using Face Recognition</h3>
+            <p>Face-recognition pipeline designed to identify people from reference images and evaluate recognition under partial occlusion such as sunglasses, goggles and masks.</p>
+            <div class="tags"><span>MATLAB</span><span>ResNet-50</span><span>ArcFace</span><span>Computer Vision</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual learning">
+            <div class="belief b1"></div><div class="belief b2"></div><div class="belief b3"></div>
+            <div class="learning-arrow">↻</div>
+            <span class="visual-code">SELF-LEARNING</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>Research Prototype</span><span>Ongoing</span></div>
+            <h3>Probabilistic Self-Experimenting Intelligence</h3>
+            <p>Experimental framework for learning unfamiliar environments through observation, hypothesis generation, uncertainty estimation, active experiments, prediction-error verification, belief updating and transfer across environments.</p>
+            <div class="loop-line">OBSERVE → HYPOTHESIZE → EXPERIMENT → VERIFY → UPDATE → TRANSFER</div>
+            <div class="tags"><span>Probabilistic Learning</span><span>Qiskit</span><span>World Models</span><span>Meta-Learning</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="project-note">
+        <span>PROJECT NOTE</span>
+        <p>The archive combines academic mini-projects, hardware builds, simulations, internship work and ongoing research prototypes.</p>
+      </div>
+    </section>
+
+    <section class="section split" id="education">
+      <div class="section-kicker">03 / EDUCATION</div>
+      <div class="timeline">
+        <div class="timeline-item current">
+          <span class="year">2024–2028</span>
+          <div>
+            <h3>B.Tech — Electronics & Communication Engineering</h3>
+            <p>SASTRA SRC Campus, Kumbakonam</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2022–2024</span>
+          <div>
+            <h3>Higher Secondary Education</h3>
+            <p>Dr. G. S. Kalyanasundharam Matric Hr. Sec. School, Pazhayagudalur</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2018–2022</span>
+          <div>
+            <h3>Middle & Secondary Education</h3>
+            <p>Rice City Matriculation Higher Secondary School, Aduthurai</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2010–2017</span>
+          <div>
+            <h3>Primary Education</h3>
+            <p>Parimalam Matriculation School, Hosur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="skills-head">
+        <div class="section-kicker">04 / CAPABILITIES</div>
+        <h2>Tools, interests<br>& <em>learning.</em></h2>
+      </div>
+      <div class="skill-cloud">
+        <span>Communication</span><span>Negotiation</span><span>Management</span>
+        <span>Arduino</span><span>Robotics</span><span>Circuit Designing</span>
+        <span>AI</span><span>IoT</span><span>Product Management</span>
+        <span>Digital Marketing</span><span>Ethical Hacking</span>
+      </div>
+
+      <div class="credentials">
+        <div class="credential">
+          <div class="credential-number">01</div>
+          <div>
+            <h3>Programming Techniques</h3>
+            <p>Bharathidasan University — First Class with Distinction</p>
+            <small>Prathamic • Madhyama • Rashtrabhasha</small>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="credential-number">02</div>
+          <div>
+            <h3>Workshop & E-Course</h3>
+            <p>Google Digital Marketing · AI in Neural Network · Arduino & Robotics · Circuit Designing · Product Management</p>
+          </div>
+        </div>
+        <div class="credential">
+          <div class="credential-number">03</div>
+          <div>
+            <h3>Pursuing</h3>
+            <p>Cisco Ethical Hacking (Intermediate)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publication" id="publication">
+      <div class="section-kicker">05 / RESEARCH PUBLICATION</div>
+      <div class="publication-grid">
+        <div>
+          <h2>Battery intelligence<br><em>for electric mobility.</em></h2>
+        </div>
+        <div class="publication-card">
+          <div class="pub-label">BOOK CHAPTER / RESEARCH CONTRIBUTION</div>
+          <h3>Hybrid TCN-ExtraTrees Framework for Lithium-Ion Battery State-of-Health Classification in Indian Electric Vehicles</h3>
+          <div class="pub-meta">
+            <div><span>DOI</span><strong>10.4018/979-8-2600-0026-7</strong></div>
+            <div><span>Chapter</span><strong>N/A</strong></div>
+            <div><span>Record</span><strong>130426-035431</strong></div>
+          </div>
+          <div class="author-box">
+            <span>AUTHOR</span>
+            <strong>Abhirajan R</strong>
+            <a href="https://orcid.org/0009-0008-2561-7417" target="_blank" rel="noopener">
+              ORCID&nbsp; 0009-0008-2561-7417 ↗
+            </a>
+          </div>
+          <a class="doi-link" href="https://doi.org/10.4018/979-8-2600-0026-7" target="_blank" rel="noopener">
+            View DOI ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section languages">
+      <div class="language-row">
+        <div class="section-kicker">06 / LANGUAGES</div>
+        <div class="language-list">
+          <span>Tamil</span><span>English</span><span>Hindi</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-mark">◈</div>
+    <p>Electronics • Communication • Intelligence • Robotics • Research</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
